@@ -1,0 +1,60 @@
+
+h1, h2 {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+body {
+    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 1000px;
+    margin: auto;
+    border: solid 1px black;
+}
+
+.ErrorList table {
+    margin: auto;
+    width: 300px;
+}
+
+.content table thead th {
+    width: 20em;
+    border: solid 1px black;
+    padding: 2px;
+}
+
+.content table tbody td {
+    width: 20px;
+    overflow: auto;
+    border: solid 1px black;
+}
+
+.content table tbody .btn {
+    width: 30em;
+}
+
+.content table tbody .tableContent {
+    width: 200em;
+}
+
+.content table tbody .time {
+    width: 50em;
+}
+
+table tbody td {
+    text-align: center;
+}
+
+.Addform {
+    margin: 5px;
+    text-align: center;
+}
+
+#content {
+    text-align: center;
+}

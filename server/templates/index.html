@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>RFID Master</h1>
+    {% if tasks|length < 1 %}
+    <h2 style="text-align: center;"> No Data </h2>
+    {% else %}
+    <table>
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>Key ID</th>
+                <th>Content</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>Floor</th>
+                <th>Date Created</th>
+            </tr>
+        </thead>
+        {% for task in tasks %}
+            <tr>
+                <td> {{ task.id }} </td>
+                <td> {{ task.keyValue }} </td>
+                <td class="tableContent"> {{ task.content }} </td>
+                <td> {{ task.floor }} </td>
+                <td> {{ task.x }} </td>
+                <td> {{ task.y }} </td>
+                <td class="time"> {{ task.date_created.date() }}</td>
+                <td class="btn">
+                    <button type="button" value="Delete" onclick="location.href='/delete/{{ task.id }}'">Delete</button>
+                    <button type="button" value="Update" onclick="location.href='/update/{{ task.id }}'">Update</button>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    <div class="Addform">
+        <input type="submit" value="Add RFID" onclick="location.href='/add'">
+    </div>
+</div>
+{% endblock %}
