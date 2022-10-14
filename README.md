@@ -17,7 +17,7 @@ Arduino와 RFID, Bluetooth를 이용하여 사용자가 주변 정보를 자연�
 ### 3. 시스템 구성도
 ![시스템 구상도](https://user-images.githubusercontent.com/35110792/195494080-891fd16f-d3c3-4c89-9dc6-10bc4d00f8dd.png)
 
-### 4. 소개 및 시연 영상
+### 4. 소개 영상
 
 ### 5. Python requirement
 ```
